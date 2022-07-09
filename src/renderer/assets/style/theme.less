@@ -1,0 +1,83 @@
+/**
+* Theme Definition
+*/
+
+@bgColor: #1e1e1e;
+@textColor: #4fb8fe;
+// 覆盖默认样式
+
+*{
+  user-select: none;
+  cursor:default;
+  &::-webkit-scrollbar { width: 0 !important }
+}
+
+
+button,a{
+  display:inline-block;
+  border:none;
+  border-width:0px;
+  border-style: none;
+  background-color:transparent;
+  outline:none;
+  color:#ccc;
+}
+table{
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+// 定义一些基础 UI 类
+
+.flex{
+  display:flex;
+}
+.flex-row{
+  display:flex;
+  flex-direction: row;
+}
+.flex-row-reverse{
+  display:flex;
+  flex-direction: row-reverse;
+}
+.flex-column{
+  display:flex;
+  flex-direction: column;
+}
+.flex-none{
+  flex:none;
+}
+.flex-auto{
+  flex:auto;
+}
+.flex-center{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-y{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.scroll-x{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.scroll{
+  overflow: auto;
+}
+.vline{
+  margin: 20px 0;
+  height:1px;
+  flex:none;
+  background-color:#666;
+}
+.hline{
+  margin: 0 10px;
+  width:1px;
+  flex:none;
+  background-color:#666;
+}
+.appregion{
+  -webkit-app-region: drag;
+}
